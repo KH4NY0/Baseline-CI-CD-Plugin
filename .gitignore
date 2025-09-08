@@ -1,0 +1,34 @@
+# Node
+node_modules/
+.npm/
+
+# Builds
+.dist/
+dist/
+build/
+coverage/
+.tmp/
+.temp/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Env and secrets
+.env
+.env.*
+
+# Reports and artifacts
+baseline-report.*
+reports/
+
+# OS
+Thumbs.db

@@ -1,0 +1,22 @@
+{
+  "mode": "warn",
+  "report": {
+    "format": "text",
+    "output": null
+  },
+  "include": [
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.cjs",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.css",
+    "**/*.html"
+  ],
+  "exclude": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**"
+  ]
+}

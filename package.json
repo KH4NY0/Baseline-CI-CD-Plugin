@@ -1,0 +1,44 @@
+{
+  "name": "baseline-ci-cd-plugin",
+  "version": "0.1.0",
+  "description": "Baseline CI/CD Plugin: scans HTML/CSS/JS for modern web features and checks Baseline compatibility.",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "baseline-check": "bin/baseline-check.js"
+  },
+  "scripts": {
+    "baseline-check": "node bin/baseline-check.js",
+    "start": "node bin/baseline-check.js",
+    "test": "node bin/baseline-check.js --help"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "baseline",
+    "ci",
+    "cd",
+    "web-features",
+    "compatibility",
+    "cli"
+  ],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KH4NY0/Baseline-CI-CD-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KH4NY0/Baseline-CI-CD-Plugin/issues"
+  },
+  "homepage": "https://github.com/KH4NY0/Baseline-CI-CD-Plugin#readme",
+  "dependencies": {
+    "acorn": "^8.15.0",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.0",
+    "fast-glob": "^3.3.3",
+    "parse5": "^8.0.0",
+    "postcss": "^8.5.6",
+    "web-features": "^2.48.0"
+  }
+}

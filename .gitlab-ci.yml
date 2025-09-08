@@ -1,0 +1,13 @@
+stages:
+  - baseline
+
+baseline_check:
+  stage: baseline
+  image: node:20
+  script:
+    - npm ci || npm install
+    - npm run baseline-check -- --mode warn --report json --output baseline-report.json
+  artifacts:
+    when: always
+    paths:
+      - baseline-report.json
