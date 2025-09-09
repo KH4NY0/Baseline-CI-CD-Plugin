@@ -1,6 +1,6 @@
 # Baseline CI/CD Plugin
 
-![Baseline CI/CD Plugin](assets/hero.png)
+![Baseline CI/CD Plugin](assets/hero.jpg)
 
 A fast, CI-friendly command‑line tool that scans your project’s HTML/CSS/JS/TS and reports where you’re using modern web features that may or may not be covered by Baseline support. It also performs lightweight dependency-space checks that can mask or complicate Baseline analysis.
 
@@ -136,7 +136,7 @@ Limitations
 - The tool complements, not replaces, npm audit/Dependabot—its goal is Baseline-focused compatibility checks.
 
 Image note
-- This document references assets/hero.png under the title. Save the provided image to that path so it renders here.
+- This document references assets/hero.jpg under the title. Save the provided image to that path so it renders here.
 
 License
 - MIT
