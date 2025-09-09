@@ -135,8 +135,6 @@ Limitations
 - The HTML report is a placeholder (use JSON for CI).
 - The tool complements, not replaces, npm audit/Dependabot—its goal is Baseline-focused compatibility checks.
 
-Image note
-- This document references assets/hero.jpg under the title. Save the provided image to that path so it renders here.
 
 License
 - MIT
