@@ -56,10 +56,11 @@ export async function reportResults({ cwd, config, results }) {
   const mode = (config.mode || 'warn').toLowerCase();
   const items = [];
 
-  for (const r of results) {
+for (const r of results) {
     if (!r.featureId) {
-      items.push({ ...r, severity: 'info', baseline: 'unknown' });
-      infos++;
+      const severity = r.severity || 'info';
+      if (severity === 'error') errors++; else if (severity === 'warn') warnings++; else infos++;
+      items.push({ ...r, severity, baseline: 'unknown' });
       continue;
     }
     const feature = featIndex.get(r.featureId);

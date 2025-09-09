@@ -22,6 +22,8 @@ program
   .option('-o, --output <path>', 'Output path for report (json/html)')
   .option('--include <globs...>', 'Override include globs')
   .option('--exclude <globs...>', 'Override exclude globs')
+  .option('--deps <mode>', 'Dependency checks: on|off')
+  .option('--disable-deps <rules...>', 'Disable specific dependency rules: polyfills, build-tools, css-frameworks')
   .action(async (targets, opts) => {
     const cwd = process.cwd();
     const config = await loadConfig(cwd, opts);
@@ -30,7 +32,7 @@ program
     const exclude = opts.exclude || config.exclude;
     const inputTargets = (targets && targets.length) ? targets : ['.'];
 
-    const results = await scan({ cwd, targets: inputTargets, include, exclude });
+    const results = await scan({ cwd, targets: inputTargets, include, exclude, config });
     const summary = await reportResults({ cwd, config: { ...config, ...opts }, results });
 
     // Exit code policy
